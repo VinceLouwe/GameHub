@@ -1,0 +1,29 @@
+body {
+   background-color:#00320f;
+}
+
+@font-face {
+    font-family: 'Neue'; /* Define the name you'll use for the font */
+    src: url('fontthing.ttf'); /* Path to the font file */
+}
+
+h1, p {
+    font-family:"Neue";
+    text-indent: 10px;
+    color: white;
+    text-align: center
+ }
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 12.5%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
